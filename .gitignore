@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+
+# Directories used by tools like mocha & istanbul
+coverage
+shippable
+
+# Dependency directory
+node_modules
+
+# Generated files
+config/development/contracts.json
+config/development/*.sol.js
+config/test/contracts.json
+build
+build_webpack
+dist
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+.truffle-solidity-loader
+.vagrant/**
+blockchain/geth/**
+blockchain/keystore/**
+blockchain/history
+
+#truffle
+.tern-port
+yarn.lock
+package-lock.json
