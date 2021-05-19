@@ -10,20 +10,6 @@ contract ("base64", accounts => {
     // Remove unwanted charaters from vector
     lorem = lorem.replace(RegExp('[.,;.]','g'), '');
 
-    // ==== Functions ===========================================================================================
- 
-    function getGas(tx) {
-        return tx.receipt.gasUsed;
-    }
- 
-    function toHex(str) {
-        var result = '0x';
-        for (var i=0; i<str.length; i++) {
-          result += str.charCodeAt(i).toString(16);
-        }
-        return result;
-    }
-
     // ==== Tests ============================================================================================
  
     // Call
